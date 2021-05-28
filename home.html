@@ -2,12 +2,17 @@
 <html>
     <head>
         <title>Ejercicio 1: Inicio</title>
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
-<body>
-    <span> <a href="https://miespe.espe.edu.ec/">Mi Espe</a></span>
-    <a title="Espe, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Logo_ESPEOk.png"><img class="img-rounded" alt="Logo ESPEOk" src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Logo_ESPEOk.png"></a>
-    <a href="https://commons.wikimedia.org/wiki/File:Logo_ESPEOk.png">Espe</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons
+<body onload="logAccess('home')">
+    <!-- Menu del sitio -->
+    <div>
+        <a href="#espe">Inicio</a>|
+        <a href="pages/html.html">HTML</a>|
+        <a href="pages/css.html">CSS</a>|
+        <a href="pages/javascript.html">Javascript</a>
+    </div>
+    <!-- Título de la página  -->
     <h1 class="color-text">Programacion Web - NRC 5227 </h1>
     <hr/>
     <p>Ingenieria de software May-Sep 2021</p>
@@ -18,12 +23,12 @@
         <li><a href="pages/javascript.html">Javascript </a></li>
     </ul>
     <h3 class="color-text">Unidad II</h3>
-    <ul>
+    <ul class="color-text background-color-special">
         <li><a href="pages/bootstrap.html">Bootstrap</a></li>
         <li><a href="pages/jquery.html">jQuery</a></li>
         <li><a href="pages/ajax.html">Ajax</a></li>
     </ul>
-</ul>
+
 <h3>Unidad III</h3>
 <ul class="color-text background-color-special">
     <li><a href="pages/backend.html">Backend</a></li>
@@ -32,16 +37,27 @@
 </ul>
 <hr>
 <img src="imagenes/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg" alt="internt">
+<hr>
 <h2>DNS</h2>
 <p>(Domain Name System): nos servirá para traducir la
     dirección real, que es una relación numérica denominada IP,
     en el nombre del dominio.</p>
 <img src="imagenes/qué-es-dns.png" alt="DNS" >
 <footer>
+    <hr>
     <h1>Universidad de las fuerzas Armadas ESPE </h1>
     <h2>Carrera de Ingenieria de Software</h2>
     <h3>Todos los derechos reservados &copy; 2021 </h3>
+    <hr>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Logo_ESPEOk.png" alt="ESPE">
+    <a href="https://miespe.espe.edu.ec/">Mi Espe</a>
+    <hr>
+    <a title="Espe, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Logo_ESPEOk.png"><img class="img-rounded" alt="Logo ESPEOk" src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Logo_ESPEOk.png"></a>
+    <a href="https://commons.wikimedia.org/wiki/File:Logo_ESPEOk.png">Espe</a>, 
+    <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons
+    <hr>
+    <script src="js/script-util.js"></script>
+
 </footer>
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Logo_ESPEOk.png" alt="ESPE">
 </body>
 </html>

@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Contenido JS</title>
+        <title>Contenido JS</title>
+        <link rel="stylesheet" href="../css/style.css">
     </head>
-    <body>
-        <span> <a href="../home.html">Inicio</a></span>
-        <h1>JAVASCRIPT</h1>
+    <body onload="logAccess('js')">
+        <div>
+            <a href="../home.html">Inicio</a>|
+            <a href="html.html">HTML</a>|
+            <a href="css.html">CSS</a>|
+            <a href="#">Javascript</a>            
+        </div>
+        <h1 id="txttitulo">Contenido JS</h1>
+        <p> JavaScript es el lenguaje de programación más popular del mundo. JavaScript es el lenguaje de programación de la Web.</p>
+        <p>JavaScript es interpretado en el navegador. No compila.</p>
+        <img src="../imagenes/blob.jpg" alt="HTML-CSS-JS">
+        <hr>
+        <h4 id="txtejemplo">Ejemplo de JavaScript</h4>        
+        <p>Al dar click en el siguiente bot&oacute;n el t&iacute;tulo del contenido va a cambiar.</p>
+        <!--El atributo tipo evento onclick tiene vinculado una función de JavaScript -->
+        <button id="btnclick" onclick="changeTitle()">¡click!</button>
+        <br>
+        <footer>
+            <!-- Vinculación del archivo de JavaScript [Programación] -->
+            <script src="../js/script-javascript.js"></script>            
+            <script src="../js/script-util.js"></script>
+        </footer>
     </body>
 </html>

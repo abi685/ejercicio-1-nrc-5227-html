@@ -1,0 +1,33 @@
+
+        body {
+            background-color: rgb(146, 212, 214);
+        }
+
+        h1 {
+            color: rgb(31, 138, 111);
+            text-align: center;
+        }
+
+
+        p {
+            font-family: 'verdana';
+            font-size: 20px;
+        }
+
+        img {
+            border:black 1px;
+            border-style: dashed;
+        }
+        .img-rounded {
+            border-radius: 30px; 
+            border-style: double;
+         }
+         
+         .color-text {
+             color: cadetblue;
+         }
+         
+         .background-color-special {
+             background-color: burlywood;
+         }
+

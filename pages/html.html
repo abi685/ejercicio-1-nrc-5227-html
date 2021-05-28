@@ -2,25 +2,53 @@
 <html>
     <head>
         <title>Contenido HTML</title>
+        <link rel="stylesheet" href="../css/style.css">
     </head>
-    <body>
-        <span> <a href="../home.html">Inicio</a></span>
+    <body onload="logAccess('html')">        
+        <div>
+            <!-- Menu de Inicio -->
+            <a href="../home.html">Inicio</a>|
+            <a href="#">HTML</a>|
+            <a href="css.html">CSS</a>|
+            <a href="javascript.html">Javascript</a>            
+        </div>
         <h1>HTML</h1>
-        <P>Es un lenguaje de marcado de hipertexto</P>
-        <P>Uiliza etiquetas para la estructura de la pagina web </P>
+        <div>
+            <a href="#txtHipervinculo">Hiperv&iacute;nculo</a>|
+            <a href="#txtVideo">Video</a>|
+            <a href="#txtImagen">Imagen</a>|
+            <a href="#txtAtributoId">Atributo ID</a>            
+        </div>
+        <p>Es un lenguaje de marcado de Hipertexto.</p>
+        <p>Utiliza etiquetas para la estructura de la página web.</p>        
         <hr>
-        <h2> Hipervinculo</h2>
-        <p> Es una etiqueta que sirve para navegar a otra pagina interna o externa</p>
-        <p>El nombre de la etiqueta es <b>a</b> y utiliza el atributo <b>href</b> para definir al vinculo que se quiere accerder</p>
+        <h2 id="txtHipervinculo">Hipervínculo</h2>
+        <p>Es una etiqueta que sirve para navegar a otra página interna o externa</p>
+        <p>El nombre de la etiqueta es <strong>a</strong> y utiliza el atributo <b>href</b> para definir el vínculo al que se quiere acceder.</p>
         <code>
             &lt;a href="page.html"&gt;Pagina&lt;/a&gt;
         </code>
+        <hr>        
+        <h2 id="txtVideo">Video</h2>
+        <div>
+            <video width="560" height="315" controls>
+                <source src="../media/iot.mp4" type="video/mp4">            
+                Internet de las cosas
+            </video>  
+            <hr>      
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fWrY571yHYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
         <hr>
-        <h2> Simbolo especiales</h2>
+        <h2 id="txtImagen">Imagen</h2>
+        <p>Ejemplo de imagen que está en la carpeta <b>images</b></p>
+        <img src="../imagenes/imagenes.jpg" alt="HTML">         
         <hr>
-        <h2> Imagen</h2>
-        <p>como utilizar html para imagenes</p>
-        <p>Ejemplo de imagen que esta dentro de la caparte</p>
-        <img src="../imagenes/imagenes.jpg" alt="HTML">
+        <h2 id="txtAtributoId">El atributo ID</h2>
+        <p>El atributo global <b>id</b> define un identificador &uacute;nico (ID), para una etiqueta, el cual no debe repetirse en todo el documento HTML.</p>
+		<p>Su prop&oacute;sito es identificar el elemento, al vincularlo, en scripts u hojas de estilo (con CSS)</p>
+		<p>El valor de este atributo es una cadena de caracteres y no debe contener espacios en blanco.</p>
+        <footer>
+            <script src="../js/script-util.js"></script>
+        </footer>
     </body>
 </html>
