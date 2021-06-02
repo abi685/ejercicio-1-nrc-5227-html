@@ -21,6 +21,114 @@
         <!--El atributo tipo evento onclick tiene vinculado una función de JavaScript -->
         <button id="btnclick" onclick="changeTitle()">¡click!</button>
         <br>
+        <hr>
+        <h2>Ejercicios con operadores de Javascript </h2>
+        <div>
+            <label for="txtnumero1">No1</label>
+            <!-- input es un elemento que permite el ingro de valores al documento HTML-->
+            <!--DOM-->
+            <input type="number" min="0" max="127" value="1" name="txtnumero1" id="txtnumero1">
+        </div>
+        <div>
+            <label for="txtnumero2">No2</label>
+            <input type="number" min="1" max="127" value="1" name="txtnumero2" id="txtnumero2">
+        </div>
+        <br>
+        <div>
+            <button class="btn" id="btnSumaHTML" onclick="operar('Ha pulsado el <b>button</b> de HTML')" >Operar con HTML</button> 
+            
+        </div>
+        <div>
+            <input class="btn"  id="btnSumaInput" onclick="operar('Ha pulsado el <b>input</b> tipo botón')" type="button" value="Operar con INPUT">
+        </div>
+        <br>
+        <div>
+            <label for="txtResultado">Suma:</label>
+            <input type="text" name="txtResultadoSuma" id="txtResultadoSuma" readonly>
+            <label for="txtResultado">Resta:</label>
+            <input type="text" name="txtResultadoResta" id="txtResultadoResta" readonly>
+            
+        </div>
+        <div>
+            <label for="txtResultadoMultiplicar">Multiplicacion:</label>
+            <input type="text" name="txtResultadoMultiplicar" id="txtResultadoMultiplicar" readonly>
+            <label for="txtResultadoDivicion">Divicion:</label>
+            <input type="text" name="txtResultadoDivicion" id="txtResultadoDivicion" readonly>
+        </div>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <h3>Area de un Cuadrado</h3>
+        <img src="https://www.caracteristicass.de/wp-content/uploads/2018/06/caracteristicas-del-cuadrado.jpg" alt="">
+        <p>Formula: l <sup>2</sup>  </p>
+        <div>
+            <label for="txtnumero3">No1</label>
+            <input type="number" min="1" max="127" value="1" name="txtnumero3" id="txtnumero3">
+        </div>
+        <br>
+        <div>
+            <button class="btn1" id="btnACuadradoHTML" onclick="operar1('Ha pulsado el <b>button</b> de HTML')" >Operar con HTML</button> 
+            
+        </div>
+        <div>
+            <input class="btn1"  id="btnACuadradoInput" onclick="operar1('Ha pulsado el <b>input</b> tipo botón')" type="button" value="Operar con INPUT">
+        </div>
+        <br>
+        <div>
+            <label for="txtResultadoACuadrado">Area del Cuadrado:</label>
+            <input type="text" name="txtResultadoACuadrado" id="txtResultadoACuadrado" readonly>
+            
+        </div>
+        <hr>
+        <h3>Volumen de un cubo</h3>
+        <img src="https://www.universoformulas.com/imagenes/matematicas/geometria/cubo-volumen.jpg" alt="">
+        <p>Formula: a <sup>3</sup> </p>
+        <div>
+            <label for="txtnumero4">No1</label>
+            <input type="number" min="1" max="127" value="1" name="txtnumero4" id="txtnumero4">
+        </div>
+        <br>
+        <div>
+            <button class="btn" id="btnVCuboHTML" onclick="operar2('Ha pulsado el <b>button</b> de HTML')" >Operar con HTML</button> 
+            
+        </div>
+        <div>
+            <input class="btn"  id="btnVCuboInput" onclick="operar2('Ha pulsado el <b>input</b> tipo botón')" type="button" value="Operar con INPUT">
+        </div>
+        <br>
+        <div>
+            <label for="txtResultadoVCubo">Volumen del Cubo:</label>
+            <input type="text" name="txtResultadoVCubo" id="txtResultadoVCubo" readonly>
+            
+        </div>
+        <hr>
+        <h3>Perimetro de un Rectangulo</h3>
+        <img src="https://www.universoformulas.com/imagenes/matematicas/geometria/rectangulo-perimetro.jpg" alt="">
+        <p>Formula: 2 * (a + b) </p>
+        <div>
+            <label for="txtnumero5">No1</label>
+            <input type="number" min="1" max="127" value="1" name="txtnumero5" id="txtnumero5">
+        </div>
+        <div>
+            <label for="txtnumero6">No2</label>
+            <input type="number" min="1" max="127" value="1" name="txtnumero6" id="txtnumero6">
+        </div>
+        <br>
+        <div>
+            <button class="btn" id="btnPRectanguloHTML" onclick="operar3('Ha pulsado el <b>button</b> de HTML')" >Operar con HTML</button> 
+            
+        </div>
+        <div>
+            <input class="btn"  id="btnPRectanguloInput" onclick="operar3('Ha pulsado el <b>input</b> tipo botón')" type="button" value="Operar con INPUT">
+        </div>
+        <br>
+        <div>
+            <label for="txtResultadoPRectangulo">Perimetro del Rectangulo:</label>
+            <input type="text" name="txtResultadoPRectangulo" id="txtResultadoPRectangulo" readonly>
+            
+        </div>
+        <br>
         <footer>
             <!-- Vinculación del archivo de JavaScript [Programación] -->
             <script src="../js/script-javascript.js"></script>            
@@ -28,3 +136,29 @@
         </footer>
     </body>
 </html>
+
+<!--
+        <div>
+            <input type="button">
+            <input type="checkbox">
+            <input type="color">
+            <input type="date">
+            <input type="datetime-local">
+            <input type="email">
+            <input type="file">
+            <input type="hidden">
+            <input type="image">
+            <input type="month">
+            <input type="number">
+            <input type="password">
+            <input type="radio">
+            <input type="range">
+            <input type="reset">
+            <input type="search">
+            <input type="submit">
+            <input type="tel">
+            <input type="text"> (default value)
+            <input type="time">
+            <input type="url">
+            <input type="week">
+        </div> -->
