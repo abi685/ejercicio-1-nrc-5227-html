@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="setup()">
+    <header>
+        <h1>Envio de formulario JS</h1>
+        <hr>
+    </header>
+    <!--Conttenido-->
+    <div>
+        <form id="myForm"> 
+            <fieldset>
+                <div>
+                    <input type="hidden" name="txtHildden" id="txtHidden" value="NRC53">
+                </div>
+                <div>   
+                    <label for="txtNombre">Nombre: </label>
+                    <input type="text" pattern="[A-Za-zÑñáéíóú" minlength="2" name="txtNombre" id="txtNombre" required>&nbsp;&nbsp;&nbsp;&nbsp; 
+                </div>
+                <div>
+                    <label for="txtTipoSangre">Tipo de sangre</label>
+                    <select name="txtTipoSangre" id="txtTipoSangre">
+                        <option value="O+">O+</option>
+                        <option value="O+">O-</option>
+                        <option value="O+">A+</option>
+                        <option value="O+">A-</option>
+                        <option value="O+">B+</option>
+                        <option value="O+">B-</option>
+                        <option value="O+">AB+</option>
+                        <option value="O+">AB-</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="txtNacimiento">Fecha de naciiento</label>
+                    <input type="date" name="txtNacimiento" id="txtNacimiento">
+                </div>
+                <br>
+                <div>
+                    <label for="txtSexo">Sexo: </label>
+                    <label>Mujer</label><input type="radio" name="txtSexo" id="txtSexo" value="M" checked>
+                    <label>Hombre</label><input type="radio" name="txtSexo" id="txtSexo" value="H">
+                </div>
+                <br>
+                <div>
+                    <label for="">Dolencias: </label>
+                    <label>Hipertension</label><input type="checkbox" name="txtHipertension" id="txtHipertension" value="Hipertension">
+                    <label>Diabetes</label><input type="checkbox" name="txtDiabetes" id="txtDiabetes" value="Diabetes">
+                </div>
+                <br>
+                <div>
+                    <label for="txtEstatura">Estatura [cms]</label>
+                <input type="number" min="140" max="235" name="txtEstatura" id="txtEstatura" required>&nbsp;&nbsp;&nbsp;&nbsp; 
+                </div>
+                <br>
+                <div>
+                    <label for="txtPeso">Peso [kg]</label>
+                    <input type="number" min="40" max="250" name="txtPeso" id="txtPeso" required>
+                </div>
+                <br>
+                <div>
+                    <label for="txtDireccion">Direccion: </label>
+                    <br>
+                    <textarea name="txtDireccion" id="txtDireccion" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <button onclick="cancel()">Cancelar</button>
+                    <button onclick="send()">Enviar</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <footer>
+        <script src="js/script-formulario_js.js"></script>
+    </footer>    
+</body>
+</html>

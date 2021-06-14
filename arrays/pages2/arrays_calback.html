@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--La etiqueta meta, define la configuración de la página web -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos</title>
+</head>
+<body onload="imprimirPersonas()">
+    <header>
+        <h1>Funciones Callback con Arrays en JS</h1>
+    </header>
+    <div>
+        <h2>Personas en el arreglo</h2>
+        <p id="arrPersonas"></p>
+        <hr>
+        <h3>Métodos</h3>
+        <fieldset>
+            <h4>Resultado:</h4>
+            <p id="arrResultado"></p>
+            <label for="txtLetra">Letra:</label>
+            <input type="text" name="txtLetra" id="txtLetra">
+            <hr>
+            <button onclick="appendArrPersonas()">APPEND</button>
+            <button onclick="innerTextArrPersonas()">INNER TEXT</button>
+            <button onclick="innerHTMLArrPersonas()">INNER HTML</button>
+            <hr>
+            <button onclick="forEachPersonas()">FOR EACH</button>
+            <button onclick="everyPersonas(document.getElementById('txtLetra').value)">EVERY</button>
+            <button onclick="somePersonas(document.getElementById('txtLetra').value)">SOME</button>
+            <button onclick="filterPersonas(document.getElementById('txtLetra').value)">FILTER</button>
+            <button onclick="mapPersonas()">MAP</button>
+            <button onclick="findPersonas(document.getElementById('txtLetra').value)">FIND</button>
+            <button onclick="findIndexPersonas(document.getElementById('txtLetra').value)">FIND INDEX</button>
+        </fieldset>
+    </div>
+    <footer>
+        <script src="../js2/script-arrays-calback.js"></script>
+    </footer>   
+</body>
+</html>
+

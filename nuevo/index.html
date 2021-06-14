@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <!--Encabezado-->
+    <header>
+        <h1>indice de masa corporal</h1>
+        <hr>
+    </header>
+    <!--Conttenido-->
+    <div>
+        <h3>Calculadora de IMC</h3>
+        <form action="results.html" method="POST"> <!--GET-->
+            <fieldset>
+                <div>
+                    <input type="hidden" name="txtHildden" id="txtHidden" value="NRC53">
+                </div>
+                <div>   
+                    <label for="txtNombre">Nombre: </label>
+                    <input type="text" pattern="[A-Za-zÑñáéíóú" minlength="2" name="txtNombre" id="txtNombre" required>&nbsp;&nbsp;&nbsp;&nbsp; 
+                </div>
+                <div>
+                    <label for="txtTipoSangre">Tipo de sangre</label>
+                    <select name="txtTipoSangre" id="txtTipoSangre">
+                        <option value="O+">O+</option>
+                        <option value="O+">O-</option>
+                        <option value="O+">A+</option>
+                        <option value="O+">A-</option>
+                        <option value="O+">B+</option>
+                        <option value="O+">B-</option>
+                        <option value="O+">AB+</option>
+                        <option value="O+">AB-</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="txtNacimiento">Fecha de naciiento</label>
+                    <input type="date" name="txtNacimiento" id="txtNacimiento">
+                </div>
+                <br>
+                <div>
+                    <label for="txtSexo">Sexo: </label>
+                    <label>Mujer</label><input type="radio" name="txtSexo" id="txtSexo" value="M" checked>
+                    <label>Hombre</label><input type="radio" name="txtSexo" id="txtSexo" value="H">
+                </div>
+                <br>
+                <div>
+                    <label for="">Dolencias: </label>
+                    <label>Hipertension</label><input type="checkbox" name="txtHipertension" id="txtHipertension" value="Hipertension">
+                    <label>Diabetes</label><input type="checkbox" name="txtDiabetes" id="txtDiabetes" value="Diabetes">
+                </div>
+                <br>
+                <div>
+                    <label for="txtEstatura">Estatura [cms]</label>
+                <input type="number" min="140" max="235" name="txtEstatura" id="txtEstatura" required>&nbsp;&nbsp;&nbsp;&nbsp; 
+                </div>
+                <br>
+                <div>
+                    <label for="txtPeso">Peso [kg]</label>
+                    <input type="number" min="40" max="250" name="txtPeso" id="txtPeso" required>
+                </div>
+                <br>
+                <div>
+                    <label for="txtDireccion">Direccion: </label>
+                    <br>
+                    <textarea name="txtDireccion" id="txtDireccion" cols="30" rows="10"></textarea>
+                </div>
+                <!--Para vincular el boton con una funcion de JS se utiliza una atributo tipo evento-->
+                <div>
+                    <input type="reset" value="Cancelar">
+                    <input type="submit" value="Enviar">
+                </div>
+                
+                <!--<p id="pResultado"></p>-->
+            </fieldset>
+        </form>
+        <hr>
+        <p>El sobrepeso puede causar la elevación de la concentración de colesterol total y de la presión arterial, y aumentar el riesgo de sufrir la enfermedad arterial coronaria. La obesidad aumenta las probabilidades de que se presenten otros factores de riesgo cardiovascular, en especial, presión arterial alta, colesterol elevado y diabetes.</p>
+        <img src="img/Body_mass_index_chart-es.svg.png" alt="" width="25%">
+        <h2>calculo del IMC</h2>
+        <img src="img/1b9f4caa253a635dd7dbaabcb2f0e622d96055ba.svg" alt="">
+        <p>El índice de masa corporal (IMC) es una razón matemática que asocia la masa y la talla de un individuo </p>
+       
+        <h3>Formularios en HTML form</h3>
+        <p>sirve para ingresar un conjunto de datos a travez de controles de INPUTs  y enviar o submit el formulario al backend </p>
+        <p>el formulario determina un envio de datos hacia el servidor, a traves de su atributo action</p>
+        <br>
+        <p>la navegacion en un sitio web se puede hacer a traves de hipervinculos</p>
+        <p>el atributo accion determina el destino del envio del formulario. que puede ser otra pagina, la misma pagina </p>
+        <br>
+        <br>
+    </div>
+    <!--Pie de pagina
+    <footer>
+        <script src="../nuevo/js/sript-index.js"></script>
+    </footer>-->
+</body>
+</html>
+
+<!--<div>
+    <label for="txtEmail">Email:</label>
+    <input type="email" name="txtEmail" id="txtEmail">&nbsp;&nbsp;&nbsp;&nbsp; 
+    <label for="txtContrasena">Contraseña:</label>
+    <input type="password" pattern="[A-Za-z]{6}" name="txtContrasena" id="txtContrasena">&nbsp;&nbsp;&nbsp;&nbsp; 
+</div>-->

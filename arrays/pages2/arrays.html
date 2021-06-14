@@ -1,49 +1,78 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Arreglos Javascript </title>
-    </head>
-    <body onload="imprimirarreglos()">
-        <h1>Ejercicios con arreglos en Javascript</h1>
+    <header>
+        <title>Metodos y funciones de JS </title>
+    </header>
+    <body onload="imprimirPersonas()">
+        <header>
+            <h1>Javascript: Metodos y funciones</h1>
+            <hr>
+        </header>
+    <div>
+        <h2>Personas en el arreglo</h2>
+        <p id="arrPersonas"></p>
         <hr>
-        <h4>Provincias</h4>
-        <p id="arrProvincias"></p>
-        <h5>Funcion ForEach</h5>
-        <button onclick="imprimirCadaProvincia()">For Each</button>
-        <ul id="ulProvincias">
-        </ul>
-        <br>
-        <h5>Funcion PUSH</h5>
-        <div>
-            <label for="txtProvincias">Nombre: </label>
-            <input type="text" name="txtProvincias" id="txtProvincias">
-        </div>
-        <button onclick="agregarProvincias()">Push</button>
-        <hr>
-        <h4>Varios tipos de datos </h4>
-        <p id="arrTipos"></p>
-        <hr>
-        <h4>Numeros Primos </h4>
-        <p id="arrPrimos"></p>
-        <hr>
-        <h4>Serie Fibonaci </h4>
-        <p id="arrFibonaci"></p>
-        <h5>Funcion ForEach</h5>
-        <button onclick="imprimirSerieFibonaci()">For Each</button>
-        <ul id="ulFibonaci">
-        </ul>
-        <hr>
-        <h4>Figuras Geometricas </h4>
-        <p id="arrGeomatricas"></p>
-        <h5>Funcion PUSH</h5>
-        <div>
-            <label for="txtFigura">Nombre: </label>
-            <input type="text" name="txtFigura" id="txtFigura">
-        </div>
-        <button onclick="agregarFigura()">Push</button>
+        <h3>Metodos?</h3>
+        <fieldset>
+            
+            <h4>Agregar o Eliminar elementos del arreglo</h4>
+            <label for="txtNombre">Nombre:</label>
+            <input type="text" name="txtNombre" id="txtNombre">
+            <hr>
+            <div>
+                <button onclick="pushPersonas()">PUSH</button>
+                <button onclick="popPersonas()">POP</button>
+                <button onclick="ushiftPersonas()">USHIFT</button>
+                <button onclick="shiftPersonas()">SHIFT</button>
+            </div>
+            <hr>
+            <h4>Creacion de Arrays</h4>
+            <p id="arrNuevo"></p>
+            <hr>
+            <div>
+                <button onclick="slicePersonas()">SLICE</button>
+                <label for="txtInicio">Indice inicial</label>
+                <input type="number" value="1" min="1" name="txtInicio" id="txtInicio">
+                <label for="txtFinal">Indice final: </label>
+                <input type="number" value="1" min="1" name="txtFnal" id="txtFinal">
+                
+            </div>
+            <div>
+                <button onclick="splicePersonas()">SPLICE</button>
+                <button onclick="splicePlusPersonas()">SPLICE +</button>                                     
+                <label for="txtInicioSplice">Indice inicial: </label>
+                <input type="number" value="1" min="1" name="txtInicioSplice" id="txtInicioSplice">
+                <label for="txtNumSplice"># de elementos: </label>
+                <input type="number" value="1" min="1" name="txtNumSplice" id="txtNumSplice">
+                
+            </div>
+            <hr>
+            <div>
+                <button onclick="joinPersonas()">JOIN</button>                                     
+                <button onclick="arrayDesde()">ARRAY FROM</button>                                     
+                <label for="txtSep">Cadena: </label>
+                 <input type="text" name="txtSep" id="txtSep">                    
+            </div>
+                <h4>B&uacute;squeda y comprobaci&oacute;n</h4>
+                <p id="arrResultado"></p>   
+                <label for="txtCriterioBusqueda">Buscar: </label>             
+                <input type="text" name="txtCriterioBusqueda" id="txtCriterioBusqueda">
+            <hr>
+            <div>
+                <button onclick="includesPersonas()">INCLUDES</button>
+                <button onclick="indexOfPersonas()">INDEX OF</button>
+                <button onclick="lastIndexOfPersonas()">LAST INDEX OF</button>
+                <button onclick="sortPersonas()">SORT</button>
+                <button onclick="reversePersonas()">REVERSE</button>
+            </div>
+
+        </fieldset>
+
+    </div>
+
+    <footer>
+        <script src="../js2/script-arrays.js"></script>
+    </footer>
         
-        <footer>
-            <script src="../js/script-arrays.js"></script>
-        </footer>
     </body>
 </html>

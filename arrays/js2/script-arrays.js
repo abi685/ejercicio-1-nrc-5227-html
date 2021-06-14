@@ -1,56 +1,116 @@
-//arreglo de Javascript
-//arreglos: un conjunto de elementos definidos en una estructura 
-//definiciones
-//Arreglo strings
-var provincias = ['Loja', 'Azuay', 'Canar', 'Chimborazo'];
-//arreglo de varios tipos de dato
-var varios_tipos = [3, 'juan', true, '2021-05-31']
-//definir un arreglo por el constructor con el numero de elementos, en este caso 10
-var numeros_primos = new Array(10)
-//definir un arreglo por el constructor con sus elementos
-var serie_fibonacci = new Array(1,1,2,3,5,8,13,21)
-//definir un arreglo vacio
-var figuras_geometricas = new Array();
+var personas = ['Ricardo','Lissete','Rommel','Viviana','Angel','David','Luis','Kenneth'];
 
-//funcion que imprime los arreglos
-function imprimirarreglos(){
-    document.getElementById('arrProvincias').innerText = provincias;
-    document.getElementById('arrTipos').innerText = varios_tipos;
-    document.getElementById('arrPrimos').innerText = numeros_primos;
-    document.getElementById('arrFibonaci').innerText = serie_fibonacci;
-    document.getElementById('arrGeometricas').innerText = figuras_geometricas;
+function imprimirPersonas(){
+    document.getElementById('arrPersonas').innerText = personas;
+    document.getElementById('arrPersonas').append(" el arreglo tiene " + personas.length + " elementos");
 }
 
-function imprimirCadaProvincia(){
-    // Va a recorrer cada elemento del arreglo Provincias
-    provincias.forEach((x) =>{
-        var li = document.createElement('li'); // crea un nuevo elemento en el DOM por su etiqueta de HTML
-        li.innerText = x;
-        document.getElementById('ulProvincias').append(li);
-    }); // El metodo forEach es un callback, implementa una funcionalidad
-
+function imprimirNuevo(nuevo){
+    document.getElementById('arrNuevo').innerText = nuevo;
+    document.getElementById('arrNuevo').append(" el arreglo tiene " + nuevo.length + " elementos");
 }
 
-function imprimirSerieFibonaci(){
-    // Va a recorrer cada elemento del arreglo Provincias
-    serie_fibonacci.forEach((h) =>{
-        var li = document.createElement('li'); // crea un nuevo elemento en el DOM por su etiqueta de HTML
-        li.innerText = h;
-        document.getElementById('ulFibonaci').append(li);
-    }); // El metodo forEach es un callback, implementa una funcionalidad
-
+function pushPersonas(){
+    var input = document.getElementById('txtNombre');
+    var nombre = input.value;
+    var numero_elementos = personas.push(nombre);   
+    console.log("# de elementos en el arreglo => " + numero_elementos);
+    input.value = "";
+    imprimirPersonas();
 }
 
-function agregarFigura(){
-    var nombre = document.getElementById('txtFigura').value;
-    figuras_geometricas.push(nombre);
-    document.getElementById('arrGeomatricas').innerText = figuras_geometricas;
-    document.getElementById('txtFigura').value = '';
+function popPersonas(){
+    var eliminado = personas.pop();
+    console.log("Elemento eliminado => " + eliminado);
+    imprimirPersonas();
 }
 
-function agregarProvincias(){
-    var nombres = document.getElementById('txtProvincias').value;
-    provincias.push(nombres);
-    document.getElementById('arrProvincias').innerText = provincias;
-    document.getElementById('txtProvincias').value = '';
+function ushiftPersonas(){
+    var input = document.getElementById('txtNombre');
+    var nombre = input.value;
+    var numero_elementos = personas.unshift(nombre);   
+    console.log("# de elementos en el arreglo => " + numero_elementos);
+    input.value = "";
+    imprimirPersonas();
+}
+
+function shiftPersonas(){
+    var eliminado = personas.shift();
+    console.log("Elemento eliminado => " + eliminado);
+    imprimirPersonas();
+}
+
+function slicePersonas(){
+    var strInicio = document.getElementById('txtInicio').value;
+    var strFin = document.getElementById('txtFinal').value;
+    var intInicio = parseInt(strInicio);
+    var intFin = parseInt(strFin);
+    var nuevoArregloPersonas = personas.slice(intInicio, intFin);
+    imprimirNuevo(nuevoArregloPersonas);
+    imprimirPersonas();
+}
+
+function splicePersonas(){
+    var strInicio = document.getElementById('txtInicioSplice').value;
+    var strNum = document.getElementById('txtNumSplice').value;
+    var intInicio = parseInt(strInicio);
+    var intNum = parseInt(strNum);
+    var nuevoArregloPersonas = personas.splice(intInicio, intNum);    
+    imprimirNuevo(nuevoArregloPersonas);
+    imprimirPersonas();
+}
+
+function splicePlusPersonas()
+{
+    var strInicio = document.getElementById('txtInicioSplice').value;
+    var strNum = document.getElementById('txtNumSplice').value;
+    var intInicio = parseInt(strInicio);
+    var intNum = parseInt(strNum);
+    var input = document.getElementById('txtNombre');
+    var nombre = input.value;
+    var nuevoArregloPersonas = personas.splice(intInicio, intNum, nombre);    
+    imprimirNuevo(nuevoArregloPersonas);
+    imprimirPersonas();
+}
+
+
+function joinPersonas()
+{
+    var sep = document.getElementById('txtSep').value;
+    var resultado = personas.join(sep);    
+    imprimirNuevo(resultado);
+}
+
+function arrayDesde(){
+    var sep = document.getElementById('txtSep').value;
+    var resultado = Array.from(sep);    
+    imprimirNuevo(resultado);
+}
+
+function includesPersonas(){
+    var valorABuscar = document.getElementById('txtCriterioBusqueda').value;
+    var encontrado = personas.includes(valorABuscar);
+    document.getElementById('arrResultado').innerText = "Encontrado =>" + encontrado;
+}
+
+function indexOfPersonas(){
+    var valorABuscar = document.getElementById('txtCriterioBusqueda').value;
+    var encontrado = personas.indexOf(valorABuscar);
+    document.getElementById('arrResultado').innerText = "Encontrado en =>" + encontrado;
+}
+
+function lastIndexOfPersonas(){
+    var valorABuscar = document.getElementById('txtCriterioBusqueda').value;
+    var encontrado = personas.lastIndexOf(valorABuscar);
+    document.getElementById('arrResultado').innerText = "Encontrado en =>" + encontrado;
+}
+
+function sortPersonas(){
+    personas.sort();
+    imprimirPersonas();
+}
+
+function reversePersonas(){
+    personas.reverse();
+    imprimirPersonas();
 }
